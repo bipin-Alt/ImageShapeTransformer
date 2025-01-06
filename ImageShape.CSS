@@ -1,0 +1,180 @@
+:root{
+    --border-radius : .3rem;
+    --letter-spacing : .25rem;
+    --transition: all .3s linear;
+    --background-color:#027373;
+    --text-color:#f4f4f4;
+    --btn-background:#026873;
+    --btn-background-hover:#011F26;
+    --btn-color:#f2f2f2;
+    --delete-btn-background:#8C1F28;
+    --delete-btn-background-hover:#5C0F16;
+    --edit-btn-background:#2E8B57;
+    --edit-btn-background-hover:#1B4D2B;
+    --box-shadow : 0px 8px 18px #59381B;
+    --box-shadow-hover : 0px 10px 20px #59381B;
+    --select-dropdown-background :#D96941;
+    --select-dropdown-color :#f4f4f4;
+    --select-dropdown-hover :#193C40;
+    --font-family : "Courier","Source Sans Pro", "Arial";
+    --font-size : 1rem;
+    --max-width : 1170px;
+}
+
+/* General reset for margin and padding */
+body, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family:var(--font-family);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container styling */
+.all-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    border: 1px solid #f2f2f2;
+    margin:4rem;
+    box-shadow: var(--box-shadow);
+}
+
+/* Title styling */
+.title h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+    font-size: 2rem;
+}
+
+/* Input container styling */
+.input-container {
+    width: 100%;
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Labels and inputs styling */
+.input, .shape-type {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+label {
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+input.form, select.shape-select {
+    width: 100%;
+    padding: 0.8em;
+    border: 0.1em solid #ccc;
+    border-radius: 0.5em;
+    font-size: 1rem;
+}
+
+input.form:hover, select.shape-select:hover {
+    border-color: #777;
+}
+
+/* Button styling */
+.buttons {
+    margin-top: 0.5rem;
+}
+
+.apply-btn {
+    padding: 0.8em 1.5em;
+    background-color:var(--select-dropdown-background);
+    color: white;
+    border: none;
+    border-radius: 0.5em;
+    font-size: 1rem;
+    cursor: pointer;
+    transition:var(--transition);
+}
+
+.apply-btn:hover {
+    background-color: var(--btn-background-hover);
+}
+
+/* Image styling */
+.image {
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+    border: 0.2em solid #444;
+    border-radius: 0.5em;
+}
+
+/* Responsive design */
+@media (max-width: 48em) {
+    .input-container {
+        padding: 0 1rem;
+    }
+
+    label {
+        font-size: 0.9rem;
+    }
+
+    input.form, select.shape-select, .apply-btn {
+        font-size: 0.9rem;
+    }
+
+    .apply-btn {
+        padding: 0.7em 1.2em;
+    }
+}
+
+@media (max-width: 30em) {
+    .title h2 {
+        font-size: 1.5rem;
+    }
+
+    input.form, select.shape-select, .apply-btn {
+        font-size: 0.8rem;
+    }
+}
+.circle {
+    clip-path:circle(50%);
+}
+.ellipse{
+    clip-path:ellipse(50% 35% at 50% 50%);
+}
+.polygon{
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+.star{
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%,
+            68% 57%, 79% 91%, 50% 70%,
+            21% 91%, 32% 57%, 2% 35%,
+            39% 35%);
+}
+
+
+
+
+
+
+
+
+
+

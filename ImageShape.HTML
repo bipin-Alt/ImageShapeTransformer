@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Shape Transformer</title>
+    <!--Styling-->
+    <link rel="stylesheet" href="ImageShape.CSS">
+</head>
+<body>
+    <section class="all-container">
+        <div class="title">
+            <h2>Image Shape Transformer</h2>
+        </div>
+        <div class="input-container">
+            <div class="input">
+                <label for="image-upload" class="image-in" placeholder ="upload an image">Upload an Image:</label> 
+                <input  type="file" id="image-upload" class="form" accept="image">
+            </div>
+           
+            <div class="shape-type">
+                <label for="select-type" class="type-select">Select the shape:</label>
+                <select id="selectShape" class="shape-select">
+                    <option value="" disabled selected>None</option>
+                    <option value="circle">Circle</option>
+                    <option value ="polygon">Polygon</option>
+                    <option value = "ellipse">Ellipse</option>
+                    <option value="star">Star</option>
+                </select>
+            </div>
+            <div class="buttons">
+                <button type="button" class="apply-btn">Apply</button>
+            </div>
+
+        </div>
+        <div class="image">
+            <img id="image" src="uwp4487714.png" alt="image">
+        </div>
+    </section>
+<!--JavaScript-->
+<script src="ImageShape.JS"></script>
+</body>
+</html>
